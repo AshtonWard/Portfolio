@@ -32,7 +32,8 @@ Open http://localhost:8000. Rebuild after changing source files. Use `--sync` fo
 - `homelab.html`: technical focus areas
 - `notes.html` and `notes/`: field notes
 - `about.html`: background, tools, and professional links
-- `resume/index.html`: dedicated resume page with a print/save-as-PDF control
+- `content/resume.json`: complete maintained resume content (experience, projects, skills, education, certifications)
+- `templates/resume.html` and `scripts/build_resume.py`: shared resume layout and renderer; publish the generated `resume/index.html` with print/save-as-PDF support
 - `assets/`: local CSS, JavaScript, and SVG favicon
 - `scripts/`: static packaging, public-repository snapshots, Markdown rendering, and local link checks
 - `content-sources.json`: explicit public repositories to publish
@@ -45,7 +46,7 @@ The build copies an explicit list of current pages and assets into `dist/`. Lega
 
 ## Editing content
 
-Edit the corresponding HTML page. Pages contain their own text and semantic markup; CSS and the small optional navigation enhancement are shared. Core content and navigation work with JavaScript disabled.
+Edit the corresponding HTML page for general site content. For resume changes, edit `content/resume.json` and rebuild; `templates/resume.html` supplies its shell and `scripts/build_resume.py` renders the full page. Keep supported experience details here rather than replacing them with a short summary. CSS and optional JavaScript are shared. Core content and navigation work with JavaScript disabled.
 
 To add a project or field note:
 

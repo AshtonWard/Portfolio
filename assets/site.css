@@ -210,3 +210,39 @@ footer p { margin: 0; }
   .resume-intro .lede { font-size: 12pt; }
   .resume-intro .resource-links { font-size: 9pt; margin: 0 0 15px; }
 }
+
+/* Full resume: readable work history with section navigation. */
+.resume-intro { max-width: 1060px; }
+.resume-facts { color: var(--muted); font: 12px/1.9 var(--mono); }
+.resume-facts span { color: #467f59; padding-inline: 10px; }
+.resume-outline { display: flex; flex-wrap: wrap; gap: 10px 25px; padding: 18px 0; border-block: 1px solid var(--line); font: 11px/1.8 var(--mono); }
+.resume-outline a { color: var(--accent); padding-block: 3px; }
+.resume-outline a::before { content: "#"; margin-right: 3px; }
+.resume-body { max-width: 920px; }
+.resume-role + .resume-role, .resume-project + .resume-project { margin-top: 24px; padding-top: 35px; border-top: 1px solid var(--line); }
+.resume-meta, .resume-project-context { font: 11px/1.9 var(--mono) !important; color: #9fbdab !important; }
+.resume-meta strong { color: #d9e8df; }
+.resume-role li, .resume-project li { padding-left: 3px; }
+.resume-skills { margin: 0; }
+.resume-skills > div { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 28px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+.resume-skills > div:last-child { border-bottom: none; }
+.resume-skills dt { color: var(--accent); font: 12px/1.8 var(--mono); }
+.resume-skills dd { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.9; }
+.resume-certification { padding-top: 18px; }
+@media (max-width: 720px) {
+  .resume-outline { gap: 8px 18px; font-size: 10px; }
+  .resume-facts span { display: block; font-size: 0; }
+  .resume-skills > div { grid-template-columns: 1fr; gap: 8px; }
+  .resume-role h3, .resume-project h3 { font-size: 19px; }
+  .resume-role ul, .resume-project ul { padding-left: 20px; }
+}
+@media print {
+  .resume-outline { display: none; }
+  .resume-role, .resume-project { break-inside: auto; }
+  .resume-role h3, .resume-project h3 { break-after: avoid; }
+  .resume-role li, .resume-project li { break-inside: avoid; }
+  .resume-meta, .resume-project-context { color: black !important; font-size: 9pt !important; }
+  .resume-meta strong { color: black; }
+  .resume-skills > div { grid-template-columns: 150px 1fr; gap: 15px; padding-block: 8px; }
+  .resume-skills dt, .resume-skills dd { color: black; font-size: 9pt; line-height: 1.5; }
+}
