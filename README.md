@@ -6,8 +6,6 @@ A static professional portfolio intended for **ashtonward.tech**, with source ma
 
 The rebuild is under review. The domain and production hosting have not been changed.
 
-![Desktop draft](docs/preview-desktop.jpg)
-
 ![Repository content preview](docs/preview-repository.jpg)
 
 ## Theme
