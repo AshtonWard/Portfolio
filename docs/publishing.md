@@ -32,11 +32,11 @@ A source becoming private or unavailable fails the refresh. It does **not** remo
 ## Refresh modes
 
 - **Portfolio push:** source/content edits on `main` rebuild automatically.
-- **Scheduled:** at minute 23 of each hour, fetch public source changes. GitHub may delay or skip scheduled runs; this is not a real-time guarantee.
+- **Scheduled:** once daily, fetch public source changes. GitHub may delay or skip scheduled runs; this is not a real-time guarantee.
 - **Manual:** use Actions → Build and refresh portfolio → Run workflow.
 - **Immediate source notification (optional):** copy `docs/examples/notify-portfolio.yml` to each source repository and configure `PORTFOLIO_DISPATCH_TOKEN`. That workflow posts a `public-content-updated` repository dispatch to Portfolio. The Portfolio workflow must exist on the default branch.
 
-A source repository's ordinary `GITHUB_TOKEN` cannot write to another repository. The optional example requires a separate token restricted to Portfolio with repository-dispatch permission (fine-grained PAT: Contents write), or a GitHub App installation token with equivalent access. Configure credentials through GitHub secrets; none have been created or stored by this change. Hourly public fetching needs no such token.
+A source repository's ordinary `GITHUB_TOKEN` cannot write to another repository. The optional example requires a separate token restricted to Portfolio with repository-dispatch permission (fine-grained PAT: Contents write), or a GitHub App installation token with equivalent access. Configure credentials through GitHub secrets; none have been created or stored by this change. Daily public fetching needs no such token.
 
 ## Activate after review
 

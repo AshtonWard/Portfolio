@@ -7,7 +7,7 @@ on:
   repository_dispatch:
     types: [public-content-updated]
   schedule:
-    - cron: '23 * * * *'
+    - cron: '23 6 * * *'
 permissions:
   contents: read
 concurrency:

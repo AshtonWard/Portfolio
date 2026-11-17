@@ -58,7 +58,7 @@ If adding a top-level page, also add it to the explicit page list in `scripts/bu
 
 Upload only `dist/` to the selected static host. For GitHub Pages, use a Pages Actions deployment artifact containing this directory. Do not publish the repository root: it includes legacy content and review documents.
 
-The workflow builds pull requests, portfolio pushes, hourly refreshes, manual runs, and `public-content-updated` dispatches. It only deploys from `main` when the repository variable `PORTFOLIO_PUBLISH` equals `true`. Leave that unset until launch review. Pages hosting, domain settings, and secrets have not been changed. No `CNAME` is included.
+The workflow builds pull requests, portfolio pushes, daily refreshes, manual runs, and `public-content-updated` dispatches. It only deploys from `main` when the repository variable `PORTFOLIO_PUBLISH` equals `true`. Leave that unset until launch review. Pages hosting, domain settings, and secrets have not been changed. No `CNAME` is included.
 
 ## Content status
 
