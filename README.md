@@ -10,6 +10,10 @@ The rebuild is under review. The domain and production hosting have not been cha
 
 ![Repository content preview](docs/preview-repository.jpg)
 
+## Theme
+
+Black-and-green terminal styling, `./` navigation, faint Matrix animation, and project cards, using Erick Ortiz’s portfolio as the visual reference. The motion control remembers a visitor’s choice, and reduced-motion preferences disable animation. Resume opens as a full page at `./resume/`.
+
 ## Local development
 
 Requires Python 3.10 or newer and Git. Markdown rendering uses pinned Python dependencies; there is no frontend build dependency.
@@ -30,6 +34,7 @@ Open http://localhost:8000. Rebuild after changing source files. Use `--sync` fo
 - `homelab.html`: technical focus areas
 - `notes.html` and `notes/`: field notes
 - `about.html`: background, tools, and professional links
+- `resume/index.html`: dedicated resume page with a print/save-as-PDF control
 - `assets/`: local CSS, JavaScript, and SVG favicon
 - `scripts/`: static packaging, public-repository snapshots, Markdown rendering, and local link checks
 - `content-sources.json`: explicit public repositories to publish

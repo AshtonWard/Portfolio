@@ -33,6 +33,7 @@ The existing website at ashtonward.tech and its DNS/hosting were not inspected i
 - Putler: assistant concept; incident dispatcher clearly marked planned.
 - About: broad experience and tools, education wording, certification name, existing public professional links.
 - Field note: newly written documentation guidance; no fabricated incident or measured result.
+- Resume: dedicated HTML page derived from the reviewed professional scope and prior user-provided Murphy USA background. Employment dates and additional accomplishments remain pending current resume review; no invented dates or metrics are displayed.
 
 No private repository files were read or copied in this pass. Public source review is not a complete secret scan of repository history.
 

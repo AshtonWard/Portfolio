@@ -6,7 +6,8 @@ Target: ashtonward.tech. Source: AshtonWard/Portfolio. Issues #1–#4 track the 
 
 - [ ] Complete publication review in `content-review.md`.
 - [ ] Add reviewed diagrams, screenshots, configuration examples, and validation results.
-- [ ] Add the current resume PDF and a working download link.
+- [ ] Review the dedicated HTML resume at `resume/`; add employment dates and current accomplishments.
+- [ ] Verify print rendering; optionally add a reviewed downloadable resume PDF.
 - [ ] Review final wording with Ashton.
 
 ## Verification

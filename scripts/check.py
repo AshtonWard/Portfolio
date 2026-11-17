@@ -26,6 +26,7 @@ for path, doc in docs.items():
         if url.scheme or url.netloc: continue
         target = (path.parent / unquote(url.path)).resolve() if url.path else path
         assert target.is_relative_to(ROOT), f'Link escapes site: {link}'
+        if target.is_dir(): target = target / 'index.html'
         assert target.exists(), f'{path.name}: missing {link}'
         if url.fragment:
             assert target in docs and unquote(url.fragment) in docs[target].ids, f'{path.name}: missing fragment {link}'

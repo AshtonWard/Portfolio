@@ -14,7 +14,7 @@ if OUT.exists():
 OUT.mkdir()
 for name in ['index.html', 'about.html', 'homelab.html', 'notes.html']:
     shutil.copy2(ROOT / name, OUT / name)
-for name in ['assets', 'projects', 'notes']:
+for name in ['assets', 'projects', 'notes', 'resume']:
     shutil.copytree(ROOT / name, OUT / name)
 generate(OUT, sync=args.sync)
 print('Built static site in dist/')
