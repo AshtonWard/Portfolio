@@ -6,17 +6,20 @@ The rebuild is under review. The domain and production hosting have not been cha
 
 ![Desktop draft](docs/preview-desktop.jpg)
 
+![Repository content preview](docs/preview-repository.jpg)
+
 ## Local development
 
-Requires Python 3.10 or newer. No third-party packages or frontend build dependencies are needed.
+Requires Python 3.10 or newer and Git. Markdown rendering uses pinned Python dependencies; there is no frontend build dependency.
 
 ```sh
-python3 scripts/build.py
+python3 -m pip install -r requirements.txt
+python3 scripts/build.py --sync
 python3 scripts/check.py
 python3 -m http.server 8000 --directory dist
 ```
 
-Open http://localhost:8000. Rebuild after changing source files.
+Open http://localhost:8000. Rebuild after changing source files. Use `--sync` for fresh public content; subsequent builds can omit it to reuse the ignored local snapshot.
 
 ## Structure
 
@@ -26,7 +29,10 @@ Open http://localhost:8000. Rebuild after changing source files.
 - `notes.html` and `notes/`: field notes
 - `about.html`: background, tools, and professional links
 - `assets/`: local CSS, JavaScript, and SVG favicon
-- `scripts/`: static packaging and local link checks
+- `scripts/`: static packaging, public-repository snapshots, Markdown rendering, and local link checks
+- `content-sources.json`: explicit public repositories to publish
+- `.github/workflows/publish.yml`: refresh, validate, package, and optionally publish
+- `docs/publishing.md`: architecture, refresh modes, and activation instructions
 - `docs/content-review.md`: source inventory, findings, and remaining publication review
 - `docs/launch-checklist.md`: hosting and launch work
 
@@ -50,8 +56,8 @@ If adding a top-level page, also add it to the explicit page list in `scripts/bu
 
 Upload only `dist/` to the selected static host. For GitHub Pages, use a Pages Actions deployment artifact containing this directory. Do not publish the repository root: it includes legacy content and review documents.
 
-Deployment automation, the custom domain, HTTPS verification, and the final resume download remain tracked in issues #1–#4. No deployment workflow or `CNAME` has been enabled as part of this first draft.
+The workflow builds pull requests, portfolio pushes, hourly refreshes, manual runs, and `public-content-updated` dispatches. It only deploys from `main` when the repository variable `PORTFOLIO_PUBLISH` equals `true`. Leave that unset until launch review. Pages hosting, domain settings, and secrets have not been changed. No `CNAME` is included.
 
 ## Content status
 
-The first project pages are scoped overviews. At review time the public Ansible and Homelab repositories each contained only a README; the site does not describe their full implementations as publicly available. Project evidence and the current resume still need review before launch.
+The first project pages are scoped editorial overviews. The repository browsers are generated from the public default branches and reflect the snapshot identified on each page. At the initial review the source repositories contained only READMEs; future supported text files are picked up automatically. Project evidence and the current resume still need review before launch.

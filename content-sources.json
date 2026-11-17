@@ -1,0 +1,6 @@
+{
+  "sources": [
+    {"slug": "ansible", "title": "Ansible Playbooks", "repository": "AshtonWard/Ansible", "description": "Documentation, playbooks, roles, and supporting scripts from my public Ansible repository."},
+    {"slug": "homelab", "title": "Homelab Documentation", "repository": "AshtonWard/Homelab", "description": "Architecture notes, setup guides, and documentation from my public Homelab repository."}
+  ]
+}

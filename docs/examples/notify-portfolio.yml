@@ -1,0 +1,20 @@
+# Optional: copy to .github/workflows/notify-portfolio.yml in each public source repo.
+# Requires a token scoped to AshtonWard/Portfolio with permission to create
+# repository_dispatch events (fine-grained PAT: Contents write).
+# Add it as PORTFOLIO_DISPATCH_TOKEN in each source repo; never commit it.
+name: Refresh portfolio after public content changes
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions: {}
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify the portfolio publisher
+        env:
+          GH_TOKEN: ${{ secrets.PORTFOLIO_DISPATCH_TOKEN }}
+        run: |
+          gh api --method POST repos/AshtonWard/Portfolio/dispatches \
+            -f event_type=public-content-updated

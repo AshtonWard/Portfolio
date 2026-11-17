@@ -20,7 +20,9 @@ Target: ashtonward.tech. Source: AshtonWard/Portfolio. Issues #1–#4 track the 
 
 - [ ] Inspect the current live site, domain registrar/DNS provider, and hosting configuration.
 - [ ] Back up existing live content and record current DNS before a migration.
-- [ ] Select GitHub Pages or another static host and configure deployment of `dist/` only.
+- [ ] Select GitHub Pages (Actions publishing source) or another static host and deploy `dist/` only.
+- [ ] Merge the reviewed publishing workflow and enable `PORTFOLIO_PUBLISH=true` when ready.
+- [ ] Optionally configure immediate cross-repo notification using `docs/examples/notify-portfolio.yml`.
 - [ ] Verify the hosting preview before changing domain routing.
 - [ ] Configure ashtonward.tech, HTTPS, www handling, and canonical metadata.
 - [ ] Determine whether legacy WordPress query URLs require host-level redirects or a migration notice.
