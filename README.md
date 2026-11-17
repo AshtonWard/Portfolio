@@ -1,5 +1,7 @@
 # Ashton Ward / SubnetPhantom — Portfolio
 
+My portfolio in the form of a website.
+
 A static professional portfolio intended for **ashtonward.tech**, with source maintained in `AshtonWard/Portfolio`.
 
 The rebuild is under review. The domain and production hosting have not been changed.
