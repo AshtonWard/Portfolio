@@ -49,3 +49,10 @@ No private repository files were read or copied in this pass. Public source revi
 - [ ] Review any private material separately before selecting it for publication.
 
 Tracked in #1 and #2. This initial inventory does not complete either issue.
+
+
+## Full resume expansion — November 17, 2026
+
+The initial resume was too sparse. The full user-supplied Q4 resume and recent corrections have now been recovered and reconciled. `content/resume.json` is the maintained source; `docs/resume-content-review.md` records provenance and exclusions.
+
+Resolved details include Staff Sergeant (E-6), all four employment periods, Southern Arkansas University graduation in May 2024 with GPA 3.34, and verified Security+ validity dates. The earlier graduation-date and missing-employment-date findings above describe the initial review, not the current maintained resume.

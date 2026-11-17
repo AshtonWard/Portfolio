@@ -1,0 +1,155 @@
+{
+  "updated": "2026-11-17",
+  "name": "Ashton Ward",
+  "location": "El Dorado, Arkansas",
+  "headline": "QA Automation Engineer I · Staff Sergeant (E-6) · Infrastructure & Automation",
+  "clearance": "Active Secret security clearance",
+  "summary": [
+    "Quality assurance automation engineer with experience validating interconnected payment applications, testing REST APIs, building TCP-based test utilities, and reproducing defects across software and network boundaries. My civilian work centers on functional testing, automation, and release validation.",
+    "Staff Sergeant in the Arkansas Army National Guard, serving in network and communications systems since January 2019. My background also includes university help desk and healthcare IT internships, a B.S. in Computer Science with a Cybersecurity & Privacy option, and CompTIA Security+ certification. Outside work, I build and document infrastructure using Proxmox, Linux, Cisco networking, OPNsense, Ansible, and GitHub Actions."
+  ],
+  "experience": [
+    {
+      "employer": "Murphy USA",
+      "title": "QA Automation Engineer I",
+      "dates": "October 2024 – Present",
+      "location": "El Dorado, Arkansas",
+      "schedule": "Full-time · 40 hours per week",
+      "bullets": [
+        "Validate a suite of more than 30 interconnected applications in cloud-integrated and network-connected payment environments, checking application behavior and interactions across releases.",
+        "Perform REST API and backend validation using Postman and Python; compare expected behavior with actual responses and transaction flows.",
+        "Develop TCP-based payment-device test utilities and message-relay services to support PIN-pad simulator testing and repeatable automated scenarios.",
+        "Work with message buffers, transaction-protocol behavior, and test data while building software that supports the testing of other software.",
+        "Support functional and automated testing workflows, including Ranorex-based testing and custom simulator utilities.",
+        "Investigate failures using application behavior and firewall logs; reproduce defects, document the conditions that trigger them, and communicate findings for correction.",
+        "Execute test suites and validate changes as software moves from QA toward Alpha; use version and release information to understand which application builds are under test."
+      ]
+    },
+    {
+      "employer": "Arkansas Army National Guard",
+      "title": "Staff Sergeant (E-6) · 25H Network Communication Systems Specialist",
+      "dates": "January 2019 – Present",
+      "location": "Arkansas",
+      "schedule": "Part-time military service · recurring drill and annual training",
+      "bullets": [
+        "Support the setup, operation, and troubleshooting of tactical network and communications systems during military training and exercises.",
+        "Configure and support routers, managed switches, and communications equipment; investigate connectivity problems and restore communications within the assigned environment.",
+        "Work with Cisco networking equipment and Dell PowerEdge server platforms supporting virtualized and networked systems.",
+        "Lead and coordinate network-team tasks, provide technical assistance, and help team members operate and troubleshoot assigned equipment.",
+        "Maintain equipment accountability and follow procedures for handling sensitive information and communications equipment.",
+        "Apply experience with routing, switching, and network connectivity while working within a military communications team."
+      ]
+    },
+    {
+      "employer": "Southern Arkansas University",
+      "title": "IT Help Desk",
+      "dates": "August 2021 – October 2023",
+      "location": "Magnolia, Arkansas",
+      "schedule": "Part-time · 15 hours per week",
+      "bullets": [
+        "Support campus users with computer, printer, software, and workstation troubleshooting through help desk requests.",
+        "Deploy preconfigured Windows images using a boot drive, then prepare computers and install required software for campus use.",
+        "Assist with workstation upgrades and replacements, software installation, and hardware setup.",
+        "Support backup and upgrade preparation, printer maintenance, and workstation cabling.",
+        "Use ticketing and asset-management tools, including Lansweeper, to support service requests and equipment visibility."
+      ]
+    },
+    {
+      "employer": "Drew Memorial Health System",
+      "title": "Information Technology Intern",
+      "dates": "May 2020 – August 2020",
+      "location": "Monticello, Arkansas",
+      "schedule": "Full-time internship · 40 hours per week",
+      "bullets": [
+        "Verify backups before workstation upgrades and replacements as part of preparation for IT changes.",
+        "Prepare approximately 12 Windows computers concurrently, installing software and readying workstations for deployment.",
+        "Replace workstations, organize and connect cabling, and assist with endpoint setup in a healthcare environment.",
+        "Troubleshoot and maintain printers and support routine user-facing hardware issues.",
+        "Assist with network connectivity and static IP configuration, structured cabling, and installation or relocation of security cameras."
+      ]
+    }
+  ],
+  "skills": [
+    {"area": "Software testing & validation", "items": "Functional testing, test automation, REST API testing, Postman, Ranorex, JSON, defect reproduction, test documentation, QA-to-Alpha release validation"},
+    {"area": "Programming & scripting", "items": "Python, PowerShell, shell scripting, TCP message handling, simulator and test-utility development"},
+    {"area": "Networking", "items": "Cisco IOS, managed switching, VLANs, trunks, static routing, network segmentation, OPNsense, WireGuard, DNS troubleshooting"},
+    {"area": "Systems & virtualization", "items": "Proxmox VE, virtual machines, LXC containers, Cloud-Init, Linux/Ubuntu, Windows workstation deployment, Dell PowerEdge hardware"},
+    {"area": "Infrastructure automation", "items": "Ansible playbooks and reusable roles, YAML inventories, host/group variables, GitHub Actions, self-hosted runners, Git, input validation, service checks"},
+    {"area": "Monitoring & self-hosted services", "items": "Wazuh, Prometheus, Grafana, Node Exporter, systemd, Docker Compose, Komodo, Caddy, internal HTTPS"},
+    {"area": "IT support & teamwork", "items": "End-user troubleshooting, computer/printer support, workstation imaging and replacement, software installation, Lansweeper, ticket handling, equipment accountability, technical team coordination"}
+  ],
+  "projects": [
+    {
+      "name": "Infrastructure provisioning & configuration automation",
+      "context": "Personal homelab · implemented workflows and reusable roles",
+      "bullets": [
+        "Connect GitHub Actions, Proxmox, Cloud-Init, Ansible, and PowerShell to provision virtual machines and bootstrap Linux hosts.",
+        "Validate VM names, network inputs, and inventory groups; clone a template, configure guest networking, update inventory, validate it, and wait for the guest to become reachable before bootstrap.",
+        "Maintain host/group variables and reusable roles for base configuration, Docker, Wazuh agents, and supporting services; commit inventory changes through the provisioning workflow."
+      ],
+      "links": [{"label": "Project overview", "url": "../projects/automation.html"}, {"label": "Public Ansible material", "url": "../repos/ansible/index.html"}]
+    },
+    {
+      "name": "Virtualized homelab & network segmentation",
+      "context": "Personal infrastructure · ongoing operation and development",
+      "bullets": [
+        "Operate a multi-host Proxmox environment using virtual machines and LXC containers for infrastructure and self-hosted services.",
+        "Use OPNsense and Cisco managed switching to separate management, monitoring, services, and other workloads with VLANs and controlled access.",
+        "Troubleshoot guest networking, service reachability, and storage placement while documenting configuration decisions and operational lessons."
+      ],
+      "links": [{"label": "Homelab overview", "url": "../projects/homelab.html"}, {"label": "Public documentation", "url": "../repos/homelab/index.html"}]
+    },
+    {
+      "name": "Security monitoring & infrastructure observability",
+      "context": "Personal lab · Wazuh, Prometheus, Grafana, and Node Exporter",
+      "bullets": [
+        "Use Wazuh for lab endpoint-security monitoring and Prometheus/Grafana for infrastructure metrics and visualization.",
+        "Automate Node Exporter installation and service startup with Ansible, and maintain Prometheus scrape configuration through a template.",
+        "Validate Prometheus configuration with promtool before applying it and restarting the service; use service state and reachability checks when troubleshooting."
+      ],
+      "links": [{"label": "Homelab documentation", "url": "../repos/homelab/index.html"}]
+    },
+    {
+      "name": "Remote access & internal HTTPS",
+      "context": "Personal lab · WireGuard, OPNsense, Caddy, and DNS",
+      "bullets": [
+        "Configure WireGuard remote access and OPNsense rules for selected internal services, with internal DNS supporting service discovery.",
+        "Set up Caddy reverse proxying and HTTPS for a self-hosted application; troubleshoot upstream protocol and port mismatches.",
+        "Verify connectivity and HTTPS responses while keeping remote access scoped to the intended services."
+      ],
+      "links": [{"label": "Homelab overview", "url": "../homelab.html"}]
+    },
+    {
+      "name": "Putler / Hermes service operations & recovery",
+      "context": "Personal assistant project · service recovery implemented; incident-dispatch design in development",
+      "bullets": [
+        "Run a Hermes-based homelab assistant using systemd-managed gateway and dashboard services.",
+        "Maintain an Ansible recovery playbook that checks service activity and dashboard reachability, restarts affected services, and waits for recovery.",
+        "Explore assistant-supported investigation, documentation, and guided learning. Automated incident dispatch and specialist investigation workflows remain planned capabilities."
+      ],
+      "links": [{"label": "Putler project", "url": "../projects/putler.html"}]
+    },
+    {
+      "name": "Repository-driven technical portfolio publishing",
+      "context": "Public portfolio · implemented and deployed with GitHub Pages",
+      "bullets": [
+        "Maintain a portfolio that turns selected public repositories into searchable documentation and source-file pages, alongside curated project writeups and this resume.",
+        "Use GitHub Actions to fetch public default-branch snapshots, render Markdown and code, preserve source links and commit provenance, validate local links, and deploy the result to GitHub Pages.",
+        "Run daily refreshes and manual builds; validate rendering behavior with automated tests, including unsafe markup handling and relative-link rewriting."
+      ],
+      "links": [{"label": "Portfolio source", "url": "https://github.com/AshtonWard/Portfolio"}, {"label": "Engineering writeups", "url": "../notes.html"}]
+    }
+  ],
+  "education": {
+    "degree": "Bachelor of Science in Computer Science",
+    "option": "Cybersecurity & Privacy Option",
+    "institution": "Southern Arkansas University",
+    "location": "Magnolia, Arkansas",
+    "graduated": "May 2024",
+    "gpa": "3.34 / 4.00"
+  },
+  "certifications": [
+    {"name": "CompTIA Security+ ce", "issuer": "CompTIA", "details": "Earned November 12, 2026 · Valid through November 12, 2029 · Exam SY0-701"},
+    {"name": "Six Sigma White Belt", "issuer": "", "details": "Earned"}
+  ]
+}

@@ -3,6 +3,7 @@ from pathlib import Path
 import shutil
 import argparse
 from repository_content import generate
+from build_resume import render_resume
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--sync", action="store_true", help="Fetch fresh public repository snapshots")
@@ -14,7 +15,8 @@ if OUT.exists():
 OUT.mkdir()
 for name in ['index.html', 'about.html', 'homelab.html', 'notes.html']:
     shutil.copy2(ROOT / name, OUT / name)
-for name in ['assets', 'projects', 'notes', 'resume']:
+for name in ['assets', 'projects', 'notes']:
     shutil.copytree(ROOT / name, OUT / name)
+render_resume(OUT / "resume/index.html")
 generate(OUT, sync=args.sync)
 print('Built static site in dist/')
